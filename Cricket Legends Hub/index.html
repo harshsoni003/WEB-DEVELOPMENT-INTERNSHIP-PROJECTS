@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Legends Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+<header>
+    <h1>Cricket Legends Hub</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#players">Players</a>
+        <a href="#top-matches">Top Matches</a>
+        <a href="#fan-zone">Fan Zone</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Welcome to the World of Cricket</h1>
+    <p>Explore the legendary cricketers, their achievements, and relive the greatest matches of all time.</p>
+    <a href="#players" class="btn">Explore Players</a>
+</section>
+
+<section class="section" id="players">
+    <h2 class="section-title">Featured Players</h2>
+    <div class="player-cards">
+ 
+        <div class="player-card">
+            <img src="images/sachin.jpg" alt="Sachin Tendulkar">
+            <h3>Sachin Tendulkar</h3>
+            <p>Career Stats: Runs - 34,357, Centuries - 100, Matches - 664</p>
+        </div>
+
+        <div class="player-card">
+            <img src="images/virat.jpg" alt="Virat Kohli">
+            <h3>Virat Kohli</h3>
+            <p>Career Stats: Runs - 22,000+, Centuries - 70, Matches - 450+</p>
+        </div>
+   
+        <div class="player-card">
+            <img src="images/brain.jpg" alt="Brian Lara">
+            <h3>Brian Lara</h3>
+            <p>Career Stats: Runs - 22,358, Centuries - 53, Matches - 430</p>
+        </div>
+
+        <div class="player-card">
+            <img src="images/mic.jpg" alt="Michael Holding">
+            <h3>Michael Holding</h3>
+            <p>Career Stats: Wickets - 249, Bowling Average - 23.68, Matches - 60</p>
+        </div>
+  
+        <div class="player-card">
+            <img src="images/steve.jpg" alt="Steve Waugh">
+            <h3>Steve Waugh</h3>
+            <p>Career Stats: Runs - 10,927, Centuries - 32, Matches - 168</p>
+        </div>
+     
+        <div class="player-card">
+            <img src="images/rohit.jpg" alt="Enderby Negarandei">
+            <h3>Rohit Sharma</h3>
+            <p>Career Stats: Runs - 15,000, Centuries - 55, Matches - 300+</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="top-matches">
+    <h2 class="section-title">Top Matches</h2>
+    <div class="match-cards">
+   
+        <div class="match-card">
+            <img src="images/ind.jpg" alt="Match 1">
+            <h3>India vs Pakistan - 2007 T20 World Cup Final</h3>
+            <p>An intense final where India lifted the first-ever T20 World Cup trophy.</p>
+        </div>
+   
+        <div class="match-card">
+            <img src="images/aus.jpg" alt="Match 2">
+            <h3>Australia vs South Africa - 1999 World Cup Semi-Final</h3>
+            <p>One of the most dramatic finishes in cricket history, ending in a tied match.</p>
+        </div>
+   
+        <div class="match-card">
+            <img src="images/end.jpg" alt="Match 3">
+            <h3>England vs New Zealand - 2019 World Cup Final</h3>
+            <p>A thrilling match decided by a Super Over, marking England's first World Cup win.</p>
+        </div>
+    
+        <div class="match-card">
+            <img src="images/wi.jpg" alt="Match 4">
+            <h3>West Indies vs England - 1977 Test Match</h3>
+            <p>Historic Test match showcasing legendary fast bowling performances.</p>
+        </div>
+     
+        <div class="match-card">
+            <img src="images/aus.jpg" alt="Match 5">
+            <h3>India vs Australia - 2001 Kolkata Test</h3>
+            <p>Rekindled India's cricketing prowess with a memorable comeback victory.</p>
+        </div>
+       
+        <div class="match-card">
+            <img src="images/aus.jpg" alt="Match 6">
+            <h3>South Africa vs Australia - 2006 ODI Series</h3>
+            <p>Decisive series showcasing strategic brilliance and athleticism.</p>
+        </div>
+    
+        <div class="match-card">
+            <img src="images/pak.jpg" alt="Match 7">
+            <h3>Pakistan vs India - 2021 T20 Series Finale</h3>
+            <p>An electrifying finale with record-breaking performances on both sides.</p>
+        </div>
+    </div>
+</section>
+<h1>Interactive Map - Hometowns of Cricket Legends</h1><br><br>
+<section class="interactive-map">
+   
+    <div id="map"></div>
+</section>
+
+<section class="section" id="fan-zone">
+    <h2 class="section-title">Fan Zone</h2>
+    <p style="text-align:center;">Vote for your favorite player or submit your stories!</p>
+    <div class="fan-zone-buttons">
+        <a href="#submit-story" class="btn">Submit Your Story</a>
+        <a href="#vote" class="btn">Vote Now</a>
+    </div>
+    <h3 class="section-title">Submit Your Favorite Player Story</h3>
+    <div class="player-cards" id="submit-story">
+   
+        <form id="story-form" class="player-card">
+            <label for="player-name">Player Name:</label>
+            <input type="text" id="player-name" name="player-name" required>
+
+            <label for="story">Your Story:</label>
+            <textarea id="story" name="story" rows="5" required></textarea>
+
+            <button type="submit" class="btn1">Submit</button>
+        </form>
+    </div>
+
+    <h3 class="section-title">Vote for the Greatest Players</h3>
+    <div class="player-cards" id="vote">
+       
+        <div class="player-vote">
+            <p>Sachin Tendulkar</p>
+            <button onclick="vote('Sachin Tendulkar')">Vote</button>
+        </div>
+        <div class="player-vote">
+            <p>Virat Kohli</p>
+            <button onclick="vote('Virat Kohli')">Vote</button>
+        </div>
+        <div class="player-vote">
+            <p>Brian Lara</p>
+            <button onclick="vote('Brian Lara')">Vote</button>
+        </div>
+        <div class="player-vote">
+            <p>Michael Holding</p>
+            <button onclick="vote('Michael Holding')">Vote</button>
+        </div>
+        <div class="player-vote">
+            <p>Steve Waugh</p>
+            <button onclick="vote('Steve Waugh')">Vote</button>
+        </div>
+        <div class="player-vote">
+            <p>Enderby Negarandei</p>
+            <button onclick="vote('Enderby Negarandei')">Vote</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Cricket Legends Hub. All rights reserved.</p>
+</footer>
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

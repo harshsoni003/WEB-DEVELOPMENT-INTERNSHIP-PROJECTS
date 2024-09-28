@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Movie Buff Central</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Harry Potter Movie Buff Central</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#trailers">Trailers</a></li>
+                <li><a href="#quote">Quote of the Day</a></li>
+                <li><a href="#quiz">Trivia Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Harry Potter Movie Buff Central</h2>
+            <p>Your ultimate fan destination for the Harry Potter series!</p>
+            <div class="poster-gallery">
+                <img src="images/banner.jpg" alt="Harry Potter Movie Poster 1">
+            
+            </div>
+        </section>
+
+        <section id="characters">
+            <h2>Character Bios</h2>
+            <p>Engaging bios of your favorite Harry Potter characters!</p>
+            <div class="character-grid">
+                <div class="character-card">
+                    <img src="images/harry.jpg" alt="Harry Potter">
+                    <h3>Harry Potter</h3>
+                    <p>The Boy Who Lived. A brave Gryffindor and the Chosen One who defeated Lord Voldemort.</p>
+                </div>
+                <div class="character-card">
+                    <img src="images/char1.jpg" alt="Hermione Granger">
+                    <h3>Hermione Granger</h3>
+                    <p>The brightest witch of her age. A loyal friend and key member of Dumbledore's Army.</p>
+                </div>
+                <div class="character-card">
+                    <img src="images/char2.jpg" alt="Ron Weasley">
+                    <h3>Ron Weasley</h3>
+                    <p>Harry's best friend, a courageous Gryffindor, and an important member of the Weasley family.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="trailers">
+            <h2>Trailer Discussions</h2>
+            <p>Join the conversation about the latest trailers and teasers!</p>
+
+            <div class="trailer-container">
+                <iframe width="950" height="520" src="https://www.youtube.com/embed/fFGS4zZWGoA" title="Harry Potter 20th Anniversary: Return to Hogwarts | Official Trailer | Max" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Latest Trailer: Harry Potter 20th Anniversary: Return to Hogwarts</p>
+                <p>Release Date: January 1, 2022</p>
+                <p>Discussion: Fans are excited to see the cast return for a nostalgic journey through the making of the iconic films. Emotional moments and memories are shared in this highly anticipated reunion.</p>
+            </div>
+        </section>
+
+        <section id="quote">
+            <h2>Quote of the Day</h2>
+            <div id="quote-display">Adventure awaits those who dare to dream.</div>
+        </section>
+
+
+
+     <section id="quiz">
+
+           
+        <section class="section" id="trivia">
+            <h2 class="section-title">Trivia Quiz</h2>
+            <div class="trivia-quiz">
+                <h3>Which house does Harry Potter belong to?</h3>
+                <form id="quiz-form-1">
+                    <input type="radio" id="gryffindor1" name="house1" value="Gryffindor">
+                    <label for="gryffindor1">Gryffindor</label><br>
+                    <input type="radio" id="hufflepuff1" name="house1" value="Hufflepuff">
+                    <label for="hufflepuff1">Hufflepuff</label><br>
+                    <input type="radio" id="ravenclaw1" name="house1" value="Ravenclaw">
+                    <label for="ravenclaw1">Ravenclaw</label><br>
+                    <input type="radio" id="slytherin1" name="house1" value="Slytherin">
+                    <label for="slytherin1">Slytherin</label><br>
+                </form>
+
+                <h3>Who is the Half-Blood Prince?</h3>
+                <form id="quiz-form-2">
+                    <input type="radio" id="harry2" name="prince" value="Harry">
+                    <label for="harry2">Harry Potter</label><br>
+                    <input type="radio" id="snape2" name="prince" value="Snape">
+                    <label for="snape2">Severus Snape</label><br>
+                    <input type="radio" id="voldemort2" name="prince" value="Voldemort">
+                    <label for="voldemort2">Lord Voldemort</label><br>
+                </form>
+
+                <h3>What magical creature does Hagrid love?</h3>
+                <form id="quiz-form-3">
+                    <input type="radio" id="hippogriff3" name="creature" value="Hippogriff">
+                    <label for="hippogriff3">Hippogriff</label><br>
+                    <input type="radio" id="acromantula3" name="creature" value="Acromantula">
+                    <label for="acromantula3">Acromantula</label><br>
+                    <input type="radio" id="thestral3" name="creature" value="Thestral">
+                    <label for="thestral3">Thestral</label><br>
+                </form>
+
+                <button id="submit-quiz" type="button">Submit Quiz</button>
+            </div>
+        </section>
+
+    </main>
+</section> 
+
+    <footer>
+        <p>Harry Potter Movie Buff Central &copy; 2024</p>
+    </footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
